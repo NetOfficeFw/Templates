@@ -1,6 +1,6 @@
-# NetOffice Project Templates
+# NetOffice Tools for Visual Studio
 
-> Templates for Visual Studio.
+> Project templates for Visual Studio.
 
 ## Copyright
 

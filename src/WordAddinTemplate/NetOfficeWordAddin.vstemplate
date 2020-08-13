@@ -10,15 +10,25 @@
     <ProvideDefaultName>true</ProvideDefaultName>
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <Icon>__TemplateIcon.ico</Icon>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="WordAddin.csproj" File="WordAddin.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="true" TargetFileName="MyAddin.cs">MyAddin.cs</ProjectItem>
-      <ProjectItem ReplaceParameters="true" TargetFileName="packages.config">packages.config</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="NetOfficeExtension.56dcc096-5739-4feb-b94a-7736312e6312">
+      <package id="NetOfficeFw.Core" version="1.7.6" />
+      <package id="NetOfficeFw.Word" version="1.7.6" />
+    </packages>
+  </WizardData>
 </VSTemplate>

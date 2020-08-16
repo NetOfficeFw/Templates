@@ -53,6 +53,10 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
+    <Content Include="packages\NetOfficeFw.Excel.1.7.6.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
     <Content Include="packages\NetOfficeFw.Word.1.7.6.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
@@ -76,6 +80,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ExcelAddinTemplate\ExcelAddinTemplate.csproj">
+      <Project>{34565D3F-F74F-42F2-AE85-EA3741E459A7}</Project>
+      <Name>ExcelAddinTemplate</Name>
+      <VSIXSubPath>ProjectTemplates</VSIXSubPath>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <IncludeOutputGroupsInVSIX>TemplateProjectOutputGroup%3b</IncludeOutputGroupsInVSIX>
+    </ProjectReference>
     <ProjectReference Include="..\WordAddinTemplate\WordAddinTemplate.csproj">
       <Project>{3056EEF5-559E-45CD-8ACA-97783DF1F77C}</Project>
       <Name>WordAddinTemplate</Name>

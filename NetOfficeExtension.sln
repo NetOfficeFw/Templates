@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordAddinTemplate", "src\Wo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExcelAddinTemplate", "src\ExcelAddinTemplate\ExcelAddinTemplate.csproj", "{34565D3F-F74F-42F2-AE85-EA3741E459A7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutlookAddinTemplate", "src\OutlookAddinTemplate\OutlookAddinTemplate.csproj", "{3B670D98-615E-4B24-8EE4-0D322C4BE842}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PowerPointAddinTemplate", "src\PowerPointAddinTemplate\PowerPointAddinTemplate.csproj", "{436F422C-63D1-4CE7-815A-DD3484D8B31A}"
 EndProject
 Global
@@ -31,6 +33,10 @@ Global
 		{34565D3F-F74F-42F2-AE85-EA3741E459A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34565D3F-F74F-42F2-AE85-EA3741E459A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34565D3F-F74F-42F2-AE85-EA3741E459A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3B670D98-615E-4B24-8EE4-0D322C4BE842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B670D98-615E-4B24-8EE4-0D322C4BE842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B670D98-615E-4B24-8EE4-0D322C4BE842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B670D98-615E-4B24-8EE4-0D322C4BE842}.Release|Any CPU.Build.0 = Release|Any CPU
 		{436F422C-63D1-4CE7-815A-DD3484D8B31A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{436F422C-63D1-4CE7-815A-DD3484D8B31A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{436F422C-63D1-4CE7-815A-DD3484D8B31A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -42,6 +48,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{3056EEF5-559E-45CD-8ACA-97783DF1F77C} = {A3E94C43-AB19-4608-B022-DBFE291CA7F8}
 		{34565D3F-F74F-42F2-AE85-EA3741E459A7} = {A3E94C43-AB19-4608-B022-DBFE291CA7F8}
+		{3B670D98-615E-4B24-8EE4-0D322C4BE842} = {A3E94C43-AB19-4608-B022-DBFE291CA7F8}
 		{436F422C-63D1-4CE7-815A-DD3484D8B31A} = {A3E94C43-AB19-4608-B022-DBFE291CA7F8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution

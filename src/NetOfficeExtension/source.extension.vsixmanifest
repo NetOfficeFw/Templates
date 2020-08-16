@@ -21,5 +21,7 @@
     <Assets>
         <Asset Type="Microsoft.VisualStudio.VsPackage" d:Source="Project" d:ProjectName="%CurrentProject%" Path="|%CurrentProject%;PkgdefProjectOutputGroup|" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="WordAddinTemplate" d:TargetPath="|WordAddinTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
+        <Asset Type="NetOfficeFw.Core.1.7.6.nupkg" d:Source="File" Path="packages\NetOfficeFw.Core.1.7.6.nupkg" d:VsixSubPath="packages" />
+        <Asset Type="NetOfficeFw.Word.1.7.6.nupkg" d:Source="File" Path="packages\NetOfficeFw.Word.1.7.6.nupkg" d:VsixSubPath="packages" />
     </Assets>
 </PackageManifest>

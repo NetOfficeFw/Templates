@@ -1,0 +1,34 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>NetOffice PowerPoint Add-in</Name>
+    <Description>A project for creating Microsoft PowerPoint add-in.</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>PowerPointAddin</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
+    <Icon>__TemplateIcon.ico</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="PowerPointAddin.csproj" File="PowerPointAddin.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="MyAddin.cs">MyAddin.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="NetOfficeExtension.56dcc096-5739-4feb-b94a-7736312e6312">
+      <package id="NetOfficeFw.Core" version="1.7.6" />
+      <package id="NetOfficeFw.PowerPoint" version="1.7.6" />
+    </packages>
+  </WizardData>
+</VSTemplate>

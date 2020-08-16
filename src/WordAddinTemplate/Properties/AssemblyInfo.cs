@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("NetOfficeFw")]
 [assembly: AssemblyProduct("NetOffice Tools for Visual Studio")]
-[assembly: AssemblyCopyright("Copyright © Jozef Izso 2020")]
+[assembly: AssemblyCopyright("Copyright © 2020 Jozef Izso")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

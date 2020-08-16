@@ -30,7 +30,7 @@ namespace $safeprojectname$
         {
             using (presentation)
             {
-                // start working with the workbook
+                // start working with the presentation
             }
         }
     }

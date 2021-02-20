@@ -27,8 +27,8 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="NetOfficeExtension.56dcc096-5739-4feb-b94a-7736312e6312">
-      <package id="NetOfficeFw.Core" version="1.7.8" />
-      <package id="NetOfficeFw.PowerPoint" version="1.7.8" />
+      <package id="NetOfficeFw.Core" version="1.8.1" />
+      <package id="NetOfficeFw.PowerPoint" version="1.8.1" />
     </packages>
   </WizardData>
 </VSTemplate>

@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="NetOfficeExtension.56dcc096-5739-4feb-b94a-7736312e6312" Version="1.0" Language="en-US" Publisher="NetOffice" />
+        <Identity Id="NetOfficeExtension.56dcc096-5739-4feb-b94a-7736312e6312" Version="1.1" Language="en-US" Publisher="NetOffice" />
         <DisplayName>NetOffice</DisplayName>
         <Description xml:space="preserve">NetOffice extensions for Microsoft Visual Studio.</Description>
         <MoreInfo>https://netoffice.io</MoreInfo>
         <License>LICENSE.txt</License>
         <Tags>NetOffice; VSTO; Microsoft Office; Extensions</Tags>
-        <Preview>true</Preview>
     </Metadata>
     <Installation>
         <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0, 17.0)" />

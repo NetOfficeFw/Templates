@@ -22,7 +22,7 @@ jobs:
       run: .\.github\Get-BuildInfo.ps1 -ref '${{ github.ref }}' -event_name '${{ github.event_name }}' -configuration Release
 
     - name: build
-      run: msbuild /m /p:Configuration=Release NetOfficeExtension.sln
+      run: msbuild /m /restore /p:Configuration=Release NetOfficeExtension.sln
 
     - name: upload artifact
       uses: actions/upload-artifact@v3

@@ -39,6 +39,10 @@ if ($configuration -ieq 'release') {
     $app_version_suffix = ''
   }
 
+  if ($ref -like 'refs/heads/build') {
+    $publish_vsix = 'true'
+  }
+
   if ($ref -like 'refs/heads/releases/*') {
     $publish_vsix = 'true'
   }

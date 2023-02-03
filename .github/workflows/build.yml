@@ -21,6 +21,12 @@ jobs:
       id: build
       run: .\.github\Get-BuildInfo.ps1 -ref '${{ github.ref }}' -event_name '${{ github.event_name }}' -configuration Release
 
+    - name: setup dotnet
+      if: steps.build.outputs.sign_binaries == 'true'
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '2.1.x'
+
     - name: setup signtool
       if: steps.build.outputs.sign_binaries == 'true'
       run: dotnet tool install --verbosity minimal --global OpenVsixSignTool --version 0.3.2

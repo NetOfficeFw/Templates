@@ -11,4 +11,4 @@ from Visual Studio Marketplace.
 
 Licensed under [MIT License](LICENSE.txt).
 
-Copyright © 2020-2021 Jozef Izso
+Copyright © 2020-2023 Jozef Izso

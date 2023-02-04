@@ -1,0 +1,58 @@
+name: build
+
+on:
+  push:
+    branches: [ "main" ]
+    tags: [ 'v*.*.*' ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: windows-2019
+
+    steps:
+    - name: checkout
+      uses: actions/checkout@v3
+
+    - name: setup msbuild
+      uses: microsoft/setup-msbuild@v1.1.3
+
+    - name: setup build information
+      id: build
+      run: .\.github\Get-BuildInfo.ps1 -ref '${{ github.ref }}' -event_name '${{ github.event_name }}' -configuration Release
+
+    - name: setup dotnet
+      if: steps.build.outputs.sign_binaries == 'true'
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '2.1.x'
+
+    - name: setup signtool
+      if: steps.build.outputs.sign_binaries == 'true'
+      run: dotnet tool install --verbosity minimal --global OpenVsixSignTool --version 0.3.2
+
+    - name: build extension
+      run: msbuild /m /restore NetOfficeExtension.sln
+      env:
+        Configuration: Release
+        DeployExtension: false
+
+    - name: sign extension
+      if: steps.build.outputs.sign_binaries == 'true'
+      run: |
+        OpenVsixSignTool sign `
+        --file-digest sha256 `
+        --timestamp http://timestamp.digicert.com `
+        --timestamp-algorithm sha256 `
+        --azure-key-vault-url ${{ secrets.KEYVAULT_URL }} `
+        --azure-key-vault-client-id "${{ secrets.KEYVAULT_CLIENT_ID }}" `
+        --azure-key-vault-client-secret "${{ secrets.KEYVAULT_CLIENT_SECRET }}" `
+        --azure-key-vault-certificate "goITSolutions-until-2024-01" `
+        src/NetOfficeExtension/bin/Release/NetOfficeExtension.vsix
+
+    - name: upload artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: NetOfficeExtension_${{ steps.build.outputs.app_version_full }}.vsix
+        path: src/NetOfficeExtension/bin/Release/NetOfficeExtension.vsix

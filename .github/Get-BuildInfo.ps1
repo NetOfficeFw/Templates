@@ -30,17 +30,13 @@ $publish_vsix = 'false'
 $app_version_suffix = "preview${env:GITHUB_RUN_NUMBER}"
 
 if ($configuration -ieq 'release') {
-  if ($event_name -notlike 'pull_request') {
+  if ($event_name -eq 'push' -and $ref -like 'refs/tags/v*') {
     $sign_binaries = 'true'
   }
 
   if ($ref -like 'refs/tags/v*') {
     $publish_vsix = 'true'
     $app_version_suffix = ''
-  }
-
-  if ($ref -like 'refs/heads/releases/*') {
-    $publish_vsix = 'true'
   }
 }
 

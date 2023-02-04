@@ -2,7 +2,7 @@ name: build
 
 on:
   push:
-    branches: [ "main", "build" ]
+    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 
@@ -49,7 +49,6 @@ jobs:
         --azure-key-vault-client-secret "${{ secrets.KEYVAULT_CLIENT_SECRET }}" `
         --azure-key-vault-certificate "goITSolutions-until-2024-01" `
         src/NetOfficeExtension/bin/Release/NetOfficeExtension.vsix
-
 
     - name: upload artifact
       uses: actions/upload-artifact@v3

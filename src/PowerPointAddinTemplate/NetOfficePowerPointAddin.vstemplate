@@ -12,6 +12,7 @@
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <Icon>__TemplateIcon.ico</Icon>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
     <LanguageTag Value="csharp" />
     <PlatformTag Value="windows" />
     <ProjectTypeTag Value="desktop" />
@@ -32,8 +33,10 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="NetOfficeExtension.56dcc096-5739-4feb-b94a-7736312e6312">
-      <package id="NetOfficeFw.Core" version="1.8.1" />
-      <package id="NetOfficeFw.PowerPoint" version="1.8.1" />
+      <package id="NetOfficeFw.Core" version="1.9.5" />
+      <package id="NetOfficeFw.Office" version="1.9.5" />
+      <package id="NetOfficeFw.PowerPoint" version="1.9.5" />
+      <package id="NetOfficeFw.VBIDE" version="1.9.5" />
     </packages>
   </WizardData>
 </VSTemplate>

@@ -1,7 +1,7 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
   <TemplateData>
     <Name>NetOffice PowerPoint Add-in</Name>
-    <Description>A project for creating Microsoft PowerPoint add-in.</Description>
+    <Description>Project template for Microsoft PowerPoint add-in.</Description>
     <ProjectType>CSharp</ProjectType>
     <ProjectSubType></ProjectSubType>
     <SortOrder>1000</SortOrder>
@@ -12,6 +12,12 @@
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <Icon>__TemplateIcon.ico</Icon>
+    <RequiredFrameworkVersion>4.6</RequiredFrameworkVersion>
+    <LanguageTag Value="csharp" />
+    <PlatformTag Value="windows" />
+    <ProjectTypeTag Value="desktop" />
+    <ProjectTypeTag Value="office" />
+    <ProjectTypeTag Value="NetOffice" />
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="PowerPointAddin.csproj" File="PowerPointAddin.csproj" ReplaceParameters="true">
@@ -27,8 +33,10 @@
   </WizardExtension>
   <WizardData>
     <packages repository="extension" repositoryId="NetOfficeExtension.56dcc096-5739-4feb-b94a-7736312e6312">
-      <package id="NetOfficeFw.Core" version="1.8.1" />
-      <package id="NetOfficeFw.PowerPoint" version="1.8.1" />
+      <package id="NetOfficeFw.Core" version="1.9.5" />
+      <package id="NetOfficeFw.Office" version="1.9.5" />
+      <package id="NetOfficeFw.PowerPoint" version="1.9.5" />
+      <package id="NetOfficeFw.VBIDE" version="1.9.5" />
     </packages>
   </WizardData>
 </VSTemplate>

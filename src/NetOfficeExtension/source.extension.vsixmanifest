@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="NetOfficeExtension.56dcc096-5739-4feb-b94a-7736312e6312" Version="1.2" Language="en-US" Publisher="NetOffice" />
-        <DisplayName>NetOffice</DisplayName>
+        <Identity Id="NetOfficeExtension.56dcc096-5739-4feb-b94a-7736312e6312" Version="1.9" Language="en-US" Publisher="NetOffice" />
+        <DisplayName>NetOffice Templates</DisplayName>
         <Description xml:space="preserve">NetOffice extensions for Microsoft Visual Studio.</Description>
         <MoreInfo>https://netoffice.io</MoreInfo>
         <License>LICENSE.txt</License>
@@ -38,7 +38,7 @@
         </InstallationTarget>
     </Installation>
     <Dependencies>
-        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
+        <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.6.2,)" />
     </Dependencies>
     <Prerequisites>
         <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[15.0,18.0)" DisplayName="Visual Studio core editor" />
@@ -49,10 +49,12 @@
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="OutlookAddinTemplate" d:TargetPath="|OutlookAddinTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="PowerPointAddinTemplate" d:TargetPath="|PowerPointAddinTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
         <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:ProjectName="WordAddinTemplate" d:TargetPath="|WordAddinTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" />
-        <Asset Type="NetOfficeFw.Core.1.8.1.nupkg" d:Source="File" Path="packages\NetOfficeFw.Core.1.8.1.nupkg" d:VsixSubPath="packages" />
-        <Asset Type="NetOfficeFw.Excel.1.8.1.nupkg" d:Source="File" Path="packages\NetOfficeFw.Excel.1.8.1.nupkg" d:VsixSubPath="packages" />
-        <Asset Type="NetOfficeFw.Outlook.1.8.1.nupkg" d:Source="File" Path="packages\NetOfficeFw.Outlook.1.8.1.nupkg" d:VsixSubPath="packages" />
-        <Asset Type="NetOfficeFw.PowerPoint.1.8.1.nupkg" d:Source="File" Path="packages\NetOfficeFw.PowerPoint.1.8.1.nupkg" d:VsixSubPath="packages" />
-        <Asset Type="NetOfficeFw.Word.1.8.1.nupkg" d:Source="File" Path="packages\NetOfficeFw.Word.1.8.1.nupkg" d:VsixSubPath="packages" />
+        <Asset Type="NetOfficeFw.Core.1.9.5.nupkg" d:Source="File" Path="packages\NetOfficeFw.Core.1.9.5.nupkg" d:VsixSubPath="packages" />
+        <Asset Type="NetOfficeFw.Excel.1.9.5.nupkg" d:Source="File" Path="packages\NetOfficeFw.Excel.1.9.5.nupkg" d:VsixSubPath="packages" />
+        <Asset Type="NetOfficeFw.Office.1.9.5.nupkg" d:Source="File" Path="packages\NetOfficeFw.Office.1.9.5.nupkg" d:VsixSubPath="packages" />
+        <Asset Type="NetOfficeFw.Outlook.1.9.5.nupkg" d:Source="File" Path="packages\NetOfficeFw.Outlook.1.9.5.nupkg" d:VsixSubPath="packages" />
+        <Asset Type="NetOfficeFw.PowerPoint.1.9.5.nupkg" d:Source="File" Path="packages\NetOfficeFw.PowerPoint.1.9.5.nupkg" d:VsixSubPath="packages" />
+        <Asset Type="NetOfficeFw.VBIDE.1.9.5.nupkg" d:Source="File" Path="packages\NetOfficeFw.VBIDE.1.9.5.nupkg" d:VsixSubPath="packages" />
+        <Asset Type="NetOfficeFw.Word.1.9.5.nupkg" d:Source="File" Path="packages\NetOfficeFw.Word.1.9.5.nupkg" d:VsixSubPath="packages" />
     </Assets>
 </PackageManifest>

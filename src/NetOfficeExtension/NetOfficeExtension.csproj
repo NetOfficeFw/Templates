@@ -49,23 +49,31 @@
     <Compile Include="MainPackage.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="packages\NetOfficeFw.Core.1.8.1.nupkg">
+    <Content Include="packages\NetOfficeFw.Core.1.9.5.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="packages\NetOfficeFw.Excel.1.8.1.nupkg">
+    <Content Include="packages\NetOfficeFw.Office.1.9.5.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="packages\NetOfficeFw.Outlook.1.8.1.nupkg">
+    <Content Include="packages\NetOfficeFw.VBIDE.1.9.5.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="packages\NetOfficeFw.PowerPoint.1.8.1.nupkg">
+    <Content Include="packages\NetOfficeFw.Excel.1.9.5.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="packages\NetOfficeFw.Word.1.8.1.nupkg">
+    <Content Include="packages\NetOfficeFw.Outlook.1.9.5.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\NetOfficeFw.PowerPoint.1.9.5.nupkg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <IncludeInVSIX>true</IncludeInVSIX>
+    </Content>
+    <Content Include="packages\NetOfficeFw.Word.1.9.5.nupkg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>

@@ -12,6 +12,11 @@
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <PromptForSaveOnCreation>true</PromptForSaveOnCreation>
     <Icon>__TemplateIcon.ico</Icon>
+    <LanguageTag Value="csharp" />
+    <PlatformTag Value="windows" />
+    <ProjectTypeTag Value="desktop" />
+    <ProjectTypeTag Value="office" />
+    <ProjectTypeTag Value="NetOffice" />
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="ExcelAddin.csproj" File="ExcelAddin.csproj" ReplaceParameters="true">

@@ -31,7 +31,8 @@ $app_version_suffix = "preview${env:GITHUB_RUN_NUMBER}"
 
 if ($configuration -ieq 'release') {
   if ($event_name -eq 'push' -and $ref -like 'refs/tags/v*') {
-    $sign_binaries = 'true'
+    # temporary disabled as we don't have a valid certificate
+    $sign_binaries = 'false'
   }
 
   if ($ref -like 'refs/tags/v*') {
